@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+data/out/
+*.log
+dags/__pycache__/
+plugins/__pycache__/
+plugins/helpers/__pycache__/
+plugins/operators/__pycache__/
