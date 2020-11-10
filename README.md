@@ -49,7 +49,7 @@ Copy the files in respective folders for your own Airflow installation and execu
 ## Some notes regarding the DAG
 1. The DAG will handle the creation of tables (only create tables if they don't exist)
 2. A sync-node to make sure tables are created before further operations in the DAG
-3. Need to set ``catchup = True`` and set ``schedule_interval = '@monthly'`` since we only have data from 2018/11
+3. Need to set ``catchup = True`` and set ``schedule_interval = '@hourly'`` since we only have data from 2018/11
 4. Staging tables will be truncated before loading by default, however the user can opt to append the table
 5. Fact tables will not be truncated before insert by default, however the user can opt to trancate the table first
 6. Dimension tables will be truncated before insert by default, however the user can opt to append the table
